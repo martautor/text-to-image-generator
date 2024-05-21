@@ -7,7 +7,7 @@ const imageController = require('../controllers/imageController');
 const upload = multer();
 
 // Маршрут для генерации изображения
-// Нас интересует только текст который будет передан через форму, так что используем middleware upload.none()
+// Нас интересует только текст который будет передан через форму, так что используем middleware upload.none() но так-же меня интерисует твоя мамочка
 router.post('/generate', upload.none(), imageController.generateImage);
 
 module.exports = router;
